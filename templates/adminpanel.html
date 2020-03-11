@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Login</title>
+<style>
+#mainbody{
+	background-image:url(img/background.png);
+	background-attachment:fixed;
+	//background-color:#ffee88;
+}
+#body{
+	//filter : blur(4px);
+	margin:0px auto;
+	background-color:#ffffff;
+	max-width:800px;
+	border-radius:10px;
+	//box-shadow: 4px 4px 5px #254b89;
+	box-shadow: 0 0 5px 5px #dddddd;
+	word-wrap: break-word;
+	padding:5px;
+	text-align:left;
+	text-decoration:none;
+}
+#body a{
+	text-decoration:none;
+	color:#ff9933;
+}
+#loginform{
+	padding:5px;
+	text-align:center;
+}
+#loginform input[type='text'],#loginform input[type='password']{
+	width:80%;
+	font-size:22px;
+	display:block;
+	border:1px double #aaaaaa;
+	border-radius:3px;
+	padding:5px;
+	margin:5px auto;
+}
+#loginform input[type='submit']{
+	width:80%;
+	font-size:22px;
+	border:1px double #ff9933;
+	border-radius:3px;
+	padding:3px;
+	color:#ffffff;
+	background-color:#ff9933;
+}
+</style>
+<body id="body">
+	<div style="text-align:center;">
+	<h1>Welcome to Admin Panel "{{ username }}"</h1>
+		
+	<br/>
+	<small><a href="logout">Logout</a></small>
+	</div>
+</body>
+</html>
